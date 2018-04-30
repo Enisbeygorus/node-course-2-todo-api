@@ -191,7 +191,7 @@ describe('PATCH /todos/:id',()=>{
         .end(done);
     });
   
-    it('should uptade the todo',(done)=>{
+    it('should not uptade the todo',(done)=>{
         var hexId = todos[0]._id.toHexString();
         var text  = 'This should be the new text';
          request(app)
